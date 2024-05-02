@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/02_java.iml" filepath="$PROJECT_DIR$/.idea/02_java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/m1_variable_operator/m1_variable_operator.iml" filepath="$PROJECT_DIR$/m1_variable_operator/m1_variable_operator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/m2_control/m2_control.iml" filepath="$PROJECT_DIR$/m2_control/m2_control.iml" />
+      <module fileurl="file://$PROJECT_DIR$/m3_array/m3_array.iml" filepath="$PROJECT_DIR$/m3_array/m3_array.iml" />
+      <module fileurl="file://$PROJECT_DIR$/m4_object/m4_object.iml" filepath="$PROJECT_DIR$/m4_object/m4_object.iml" />
+      <module fileurl="file://$PROJECT_DIR$/m5_constructor_static/m5_constructor_static.iml" filepath="$PROJECT_DIR$/m5_constructor_static/m5_constructor_static.iml" />
+      <module fileurl="file://$PROJECT_DIR$/m6_inheritance_thread/m6_inheritance_thread.iml" filepath="$PROJECT_DIR$/m6_inheritance_thread/m6_inheritance_thread.iml" />
+      <module fileurl="file://$PROJECT_DIR$/m7_collection_casting/m7_collection_casting.iml" filepath="$PROJECT_DIR$/m7_collection_casting/m7_collection_casting.iml" />
+      <module fileurl="file://$PROJECT_DIR$/m8_interface_network/m8_interface_network.iml" filepath="$PROJECT_DIR$/m8_interface_network/m8_interface_network.iml" />
+      <module fileurl="file://$PROJECT_DIR$/untitled/untitled.iml" filepath="$PROJECT_DIR$/untitled/untitled.iml" />
+    </modules>
+  </component>
+</project>

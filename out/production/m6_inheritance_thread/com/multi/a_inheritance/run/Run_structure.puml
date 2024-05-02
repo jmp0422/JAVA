@@ -1,0 +1,198 @@
+@startuml
+
+/' diagram meta data start
+config=StructureConfiguration;
+{
+  "projectClassification": {
+    "searchMode": "OpenProject", // OpenProject, AllProjects
+    "includedProjects": "",
+    "pathEndKeywords": "*.impl",
+    "isClientPath": "",
+    "isClientName": "",
+    "isTestPath": "",
+    "isTestName": "",
+    "isMappingPath": "",
+    "isMappingName": "",
+    "isDataAccessPath": "",
+    "isDataAccessName": "",
+    "isDataStructurePath": "",
+    "isDataStructureName": "",
+    "isInterfaceStructuresPath": "",
+    "isInterfaceStructuresName": "",
+    "isEntryPointPath": "",
+    "isEntryPointName": "",
+    "treatFinalFieldsAsMandatory": false
+  },
+  "graphRestriction": {
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "removeByInheritance": "", // inheritance/annotation based filtering is done in a second step
+    "removeByAnnotation": "",
+    "removeByClassPackage": "", // cleanup the graph after inheritance/annotation based filtering is done
+    "removeByClassName": "",
+    "cutMappings": false,
+    "cutEnum": true,
+    "cutTests": true,
+    "cutClient": true,
+    "cutDataAccess": false,
+    "cutInterfaceStructures": false,
+    "cutDataStructures": false,
+    "cutGetterAndSetter": true,
+    "cutConstructors": true
+  },
+  "graphTraversal": {
+    "forwardDepth": 6,
+    "backwardDepth": 6,
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "hideMappings": false,
+    "hideDataStructures": false,
+    "hidePrivateMethods": true,
+    "hideInterfaceCalls": true, // indirection: implementation -> interface (is hidden) -> implementation
+    "onlyShowApplicationEntryPoints": false, // root node is included
+    "useMethodCallsForStructureDiagram": "ForwardOnly" // ForwardOnly, BothDirections, No
+  },
+  "details": {
+    "aggregation": "GroupByClass", // ByClass, GroupByClass, None
+    "showClassGenericTypes": true,
+    "showMethods": true,
+    "showMethodParameterNames": true,
+    "showMethodParameterTypes": true,
+    "showMethodReturnType": true,
+    "showPackageLevels": 2,
+    "showDetailedClassStructure": true
+  },
+  "rootClass": "com.multi.a_inheritance.run.Run",
+  "extensionCallbackMethod": "" // qualified.class.name#methodName - signature: public static String method(String)
+}
+diagram meta data end '/
+
+
+
+digraph g {
+    rankdir="TB"
+    splines=polyline
+    
+
+'nodes 
+subgraph cluster_104256825 { 
+   	label=multi
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   subgraph cluster_626513417 { 
+   	label=a_inheritance
+	labeljust=l
+	fillcolor="#d8d8d8"
+	style=filled
+   
+   Human603494902[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Human</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   age: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   name: String [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ eat()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ sleep()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Man603494902[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Man</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   power: int [1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ run()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Run512226471[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Run</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ main(args: String[])</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+SuperMan603494902[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)SuperMan</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   isFly: boolean [1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ run()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ sleep()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ space()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Woman603494902[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Woman</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   food: String [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ eatfood()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+WonderWoman603494902[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)WonderWoman</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   isSwim: boolean [1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ sleep()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ swimming()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+} 
+
+'edges    
+Human603494902 -> Man603494902[arrowhead=none, arrowtail=empty, dir=both];
+Human603494902 -> SuperMan603494902[label="sleep() -> sleep()"];
+Human603494902 -> Woman603494902[arrowhead=none, arrowtail=empty, dir=both];
+Human603494902 -> WonderWoman603494902[label="sleep() -> sleep()"];
+Man603494902 -> SuperMan603494902[arrowhead=none, arrowtail=empty, dir=both];
+Run512226471 -> Human603494902[label="main() -> eat()"];
+Run512226471 -> Woman603494902[label="main() -> eatfood()"];
+Woman603494902 -> WonderWoman603494902[arrowhead=none, arrowtail=empty, dir=both];
+    
+}
+@enduml

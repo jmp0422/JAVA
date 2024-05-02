@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="multi">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/m2_control/out/production/m2_control/com/multi/20240417_java_박재민.zip!/" />
+      <root url="jar://$PROJECT_DIR$/m2_control/out/production/m2_control/com/multi/20240418_java_박재민.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
