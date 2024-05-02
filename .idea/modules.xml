@@ -11,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/m6_inheritance_thread/m6_inheritance_thread.iml" filepath="$PROJECT_DIR$/m6_inheritance_thread/m6_inheritance_thread.iml" />
       <module fileurl="file://$PROJECT_DIR$/m7_collection_casting/m7_collection_casting.iml" filepath="$PROJECT_DIR$/m7_collection_casting/m7_collection_casting.iml" />
       <module fileurl="file://$PROJECT_DIR$/m8_interface_network/m8_interface_network.iml" filepath="$PROJECT_DIR$/m8_interface_network/m8_interface_network.iml" />
+      <module fileurl="file://$PROJECT_DIR$/m9_Lamda/m9_Lamda.iml" filepath="$PROJECT_DIR$/m9_Lamda/m9_Lamda.iml" />
       <module fileurl="file://$PROJECT_DIR$/untitled/untitled.iml" filepath="$PROJECT_DIR$/untitled/untitled.iml" />
     </modules>
   </component>
